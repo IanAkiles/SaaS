@@ -74,18 +74,13 @@ barberpro/
 ### 1. Clonar e configurar
 
 ```bash
-git clone https://github.com/seu-usuario/barberpro.git
-cd barberpro
+git clone https://github.com/IanAkiles/SaaS.git
+cd SaaS
 ```
 
 ### 2. Backend
 
-```bash
-cd backend
-npm install
-cp .env.example .env
-# Edite o .env com suas credenciais
-```
+Nesta cópia, `package.json` e `src/` ficam na raiz. Rode `npm install` nessa pasta e crie um `.env` local com `DATABASE_URL` apontando para seu PostgreSQL. Mantenha esse arquivo fora do Git. Os recursos de login, e-mail e pagamento exigem configuração própria.
 
 ### 3. Banco de dados
 
@@ -111,13 +106,7 @@ npm run dev
 
 ### 5. Frontend
 
-```bash
-cd ../frontend
-npm install         # ou use sua stack (Next.js, Vite, etc.)
-cp .env.example .env
-# Configure REACT_APP_API_URL=http://localhost:3001/api
-npm start
-```
+Esta cópia traz a API e alguns componentes React. A estrutura anterior descreve o projeto completo, mas a pasta `frontend/` não está incluída aqui.
 
 ---
 
